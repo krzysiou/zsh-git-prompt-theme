@@ -7,7 +7,7 @@ get_git_status() {
     else
       count1=`git log --oneline @{u}.. | wc -l | awk '{ print $1 }'`
       count2=`git diff --cached --name-only | wc -l | awk '{ print $1 }'`
-      count3=`git diff --stat | tail -1 | sed 's/[a-z,\(\)-]//g' | sed 's/[[:digit:]]   //g' | bc`
+      count3=`cat test.txt | sed 's/[a-z,\(\)+-]//g; s/[[:digit:]]   //g; s/^ //; s/ $//; s/ /+/' | bc`
       
       if [ -z "$count3" ]; then
       else echo "%{$fg_bold[yellow]%}! $count3%{$reset_color%} "
