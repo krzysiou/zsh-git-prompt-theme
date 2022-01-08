@@ -7,7 +7,7 @@ get_git_status() {
     else
       count1=`git log --oneline @{u}.. | wc -l | awk '{ print $1 }'`
       count2=`git diff --cached --name-only | wc -l | awk '{ print $1 }'`
-      count3=`cat test.txt | sed 's/[a-z,\(\)+-]//g; s/[[:digit:]]   //g; s/^ //; s/ $//; s/ /+/' | bc`
+      count3=`git diff --shortstat | sed 's/[a-z,\(\)+-]//g; s/[[:digit:]]   //g; s/^ //; s/ $//; s/ /+/' | bc`
       
       if [ -z "$count3" ]; then
       else echo "%{$fg_bold[yellow]%}! $count3%{$reset_color%} "
@@ -22,6 +22,7 @@ get_git_status() {
   fi
 }
 
+#test command
 
 PROMPT="%(?:%{$fg_bold[cyan]%}➜ :%{$fg_bold[cyan]%}➜ )"
 PROMPT+=' %{$fg[green]%}%~%{$reset_color%} $(git_prompt_info)$(get_git_status)'
