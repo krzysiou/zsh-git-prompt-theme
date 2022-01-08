@@ -1,6 +1,6 @@
 # zsh-git-prompt-theme
 It is my own spin-off of default zsh theme originally created by [Robby](https://github.com/robbyrussell).
-I made some changes regarding directory path length and color scheme. However the main purpose of this override suddenly appeared after reading [this](https://gist.github.com/AMoreaux/fb8df10b0de1d89fea45d8da5e467a86) was to make your experience with git much easier and pleasing by adding few more quality of life features similar to the default git branch name displayed next to the directory prompt.
+I made some changes regarding directory path length and color scheme. However the main purpose of this override suddenly appeared after reading [this](https://gist.github.com/AMoreaux/fb8df10b0de1d89fea45d8da5e467a86) It is to make your experience with git much easier and pleasing by adding few more quality of life features similar to the default git branch name displayed next to the directory prompt.
 
 ## Installation
 First of all you will need to acquire default version of zsh. Just follow the guide provided [here](https://github.com/ohmyzsh/ohmyzsh). After the installation simply enter ```~/.oh-my-zsh``` directory and locate ```custom``` folder. 
