@@ -22,8 +22,6 @@ get_git_status() {
   fi
 }
 
-#test command
-
 PROMPT="%(?:%{$fg_bold[cyan]%}➜ :%{$fg_bold[cyan]%}➜ )"
 PROMPT+=' %{$fg[green]%}%~%{$reset_color%} $(git_prompt_info)$(get_git_status)'
 
