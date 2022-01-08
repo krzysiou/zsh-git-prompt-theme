@@ -11,7 +11,7 @@ In here you will be able to add your custom plugins and themes by placing them i
 
 ## Changes
 
-The colors where changed to match the much more preferable to me green-ish look. The length of current directory prompt was also changed, now it fully displays current path to current location in opposition to original theme in which the path was displayed only by the name of current directory.
+The colors where changed to match the much more appealing to me green-ish look. The length of current directory prompt was also changed, now it fully displays current path to current location in opposition to original theme in which the path was displayed only by the name of current directory.
 
 ![Zrzut ekranu 2022-01-8 o 22 16 52](https://user-images.githubusercontent.com/60892747/148660258-43cf6e91-023b-4c8b-9eeb-9606958ebb45.png)
 
