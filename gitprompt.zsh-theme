@@ -1,3 +1,4 @@
+# custom
 get_git_status() {
 
   if [ -d ".git" ]; then;
